@@ -1,3 +1,5 @@
 # syntax=docker/dockerfile:1
 FROM ubuntu:18.04
-CMD echo HELLO
+COPY ./rcorrector /rcorrector
+CMD /rcorrector
+
