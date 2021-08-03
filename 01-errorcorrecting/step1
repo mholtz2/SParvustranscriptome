@@ -1,3 +1,1 @@
-curl https://example.com/file_name1 -o files/file_name1
-curl https://example.com/file_name2 -o files/file_name2
 perl /rcorrector/run_rcorrector.pl -1 files/file_name1 -2 files/file_name2 -k 31 -t 8 -od files/
