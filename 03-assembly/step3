@@ -1,0 +1,19 @@
+#combining all read files
+cat *_R1.cor_trim.fq.gz &gt; compiled_R1.fq.gz
+gunzip compiled_R1.fq.gz
+cat *_R2.cor_trim.fq.gz &gt; compiled_R2.fq.gz
+gunzip compiled_R2.fq.gz
+
+#trinity
+Trinity \
+--seqType fq \
+--SS_lib_type RF \
+--left compiled_R1.fq \
+--right compiled_R2.fq \
+--min_contig_length 200 \
+--output trinity \
+--max_memory 100G \
+--CPU 16 \
+--no_normalize_reads \
+--full_cleanup
+TrinityStats.pl trinity.Trinity.fasta
