@@ -1,1 +1,1 @@
-perl /rcorrector/run_rcorrector.pl -1 files/file_name1 -2 files/file_name2 -k 31 -t 8 -od files/
+perl /rcorrector/run_rcorrector.pl -1 files/SRR10907315_1.fastq -2 files/SRR10907315_2.fastq -k 31 -t 8 -od files/

@@ -1,0 +1,1 @@
+docker run -v /Users/cmbngs/Desktop/Mika/SParvustranscriptome/files:/files 01-errorcorrecting
